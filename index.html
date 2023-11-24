@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/38ef39b002.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body >
+    <header class="flex items-center sm:flex-row justify-around h-[100px] w-full bg-[#FFFBFB]  sm:p-8 p-[20px]">
+        <div class="logo">
+            <img src="./images/Asset/Untitled-2__1_-removebg-preview.png" class="w-[118px]" alt="">
+        </div>
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+            
+            <input type="text" class="py-[5px] focus:outline-none pl-[80px] Search border rounded-md border-slate-950 w-[599px]" name="" id="" placeholder="Search Products,brand and Categories">
+            <button class="bg-[#FD1010] py-[5px] px-[5px] w-[140px] text-white rounded full">Search</button>
+        </div>
+        <!-- <div>
+            <select name="" id="">
+                <option value=""><i class="fa-regular fa-user"></i>Account</option>
+            </select>
+        </div> -->
+        <div class="relative inline-block text-left">
+            <div>
+              <button type="button" class="inline-flex w-full items-center justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <i class="fa-regular fa-user"></i> Account
+                <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            <!--
+              Dropdown menu, show/hide based on menu state.
+          
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+            <div class="absolute z-[1000] right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1 bg-[#D9D9D9] " role="none">
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <form method="POST" action="#" role="none">
+                  <button type="submit" class="text-gray-700 block bg-[#FFFFFF] w-[167px] text-center rounded-md m-auto px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign Up</button>
+                </form>         
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"><i class="fa-regular fa-user"></i> My Account</a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+                <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2"><i class="fa-solid fa-heart"></i> Saved Items</a>
+              </div>
+            </div>
+          </div>
+          
+      
+        <div>
+            <ul class="flex gap-[9px]">
+                <li><i class="fa-solid fa-shop mr-[5px]"></i>shop</li>
+                <li><i class="fa-solid fa-cart-shopping mr-[5px]"></i>Cart</li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section>
+            
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/Asset/bedroom-with-large-window-bed-with-white-bed-plant-it.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/images/Asset/chic-modern-luxury-aesthetics-style-living-room-blue-tone.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+        <!-- Item 4 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+        <!-- Item 5 -->
+        <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div> -->
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+        </section>
+
+        <section class="p-[50px]">
+            <div class="flex items-center gap-[50px] sm:flex-row sm:text-[20px]">
+                <div >
+                    <h2 class="text-[40px]">Want one of these?</h2>
+                    <p>Reach us now by leaving your details</p>
+                </div>
+                <div class="flex gap-[70px]">
+                    <div>
+                        <p class="text-center">Your name</p>
+                        <input type="text" class="border-0  border-b focus:outline-none !important" name="" id="">
+                    </div>
+                    <div>
+                        <p class="text-center">Your number</p>
+                        <input type="text"  class="border-0 border-b " name="" id="">
+                    </div>
+                 
+                </div>
+                <div >
+                    <button class="bg-[#FD1010] py-[5px] px-[5px] w-[140px] text-white rounded full">Request Callback</button>
+                </div>
+                
+            </div>
+
+        </section>
+        <hr>
+        <section class="p-[50px] flex flex-col gap-[70px] ">
+            <div>
+                <div>
+                    <h1 class="text-[48px] max-w-[270px] border-b-2 ">
+                        Explore Our Appliances 
+                    </h1>                
+                </div>
+                <div class="flex gap-[20px] mt-[20px]">
+                    <div>
+                        <img src="./images/Asset/21253197_2106.q703.016.S.m004.c10.household appliance realistic.jpg" class="w-[371px] h-[258px] rounded-[25px]" alt="">
+                        <p class="text-[32px] font-bold">Furniture</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/modern-kitchen-equipment-shining-steel-appliances-gleam-generated-by-ai.jpg" class="w-[371px] h-[258px] rounded-[25px]" alt="">
+                        <p class="text-[32px] font-bold">Cooking Utensils</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/6825008_27359.jpg"  class="w-[371px] h-[258px] rounded-[25px]" alt="">
+                        <p class="text-[32px] font-bold">Others</p>
+                    </div>    
+    
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[40px]">Durable,Quality and Affordable</h1>
+                <p>Enjoy these Affordable collection of Furniture and appliances that suits your needs</p>
+                <div class="card-container mt-[70px]">
+                    <div>
+                        <img src="./images/Asset/scandinavian-living-room-interior-design-zoom-background.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>living Room - Complete set</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/double-bed-with-cushions.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>Comfortable Queen Size bed</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/25724727_6086606.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>Comfortable Queen Size bed</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/chic-modern-luxury-aesthetics-style-living-room-gray-tone.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>living Room - Television set</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/couch-447484_1280.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>washing machine</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                    <div>
+                        <img src="./images/Asset/17609910_rm417-e136-mockup.jpg" class="w-[371px] rounded-[40px]" alt="">
+                        <p>living Room- Couch</p>
+                        <p>Ghc <span class="font-bold">999</span>.99</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div>
+                <h1 class="text-[40px]">How it works</h1>
+                <p>Feel free to get in touch,we cant wait to hear from you</p>
+                <div class=" flex justify-between mt-[50px]">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="bg-[#E2CCCC] w-[131px] flex items-start rounded-[32px] items-center justify-center h-[96px]">
+                            <img src="./images/Asset/search.png" class="w-[50px]  h-[50px]" alt="">
+                        </div>
+                        <p class="text-[20px] uppercase">Browse</p>
+                        <p class="w-[180px] text-center">Go through 60+ quality and Affordable products</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="bg-[#E2CCCC] w-[131px] flex rounded-[32px] items-center justify-center  h-[96px]">
+                            <img src="./images/Asset/selection.png"  class="w-[50px]  h-[50px]" alt="">
+                        </div>
+                        <p class="text-[20px] uppercase">Select item</p>
+                        <p class="w-[202px] text-center">Choose among the products one the best that fits you</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="bg-[#E2CCCC] w-[131px] flex rounded-[32px] items-center items-start justify-center h-[96px]">
+                            <img src="./images/Asset/delivery-truck_5163890.png" alt="" class="w-[50px] h-[50px]">
+                        </div>
+                        <p class="text-[20px] uppercase">Delivery</p>
+                        <p class="w-[180px] text-center">Quick and cheap Delivery to your doorstep</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="bg-[#E2CCCC] w-[131px] rounded-[32px] flex items-center justify-center h-[96px]">
+                            <img src="./images/Asset/drink.png" alt="" class="w-[50px] h-[50px]">
+                        </div>
+                        <p class="text-[20px] uppercase">Enjoy</p>
+                        <p class="w-[180px] text-center">Enjoy amazing range of product we have to offer</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="mb-[120px]">
+            <div class="h-[607px] text-[#FFFFFF] flex flex-col gap-[45px] justify-center bg-[url('./images/Asset/living-room-with-couch-lamp-wall.jpg')] bg-cover bg-no-repeat">
+                <div>
+                    <h1 class="text-[48px] w-[320px] uppercase border-b-2">Enjoy <span class="text-[#FF0303]">Special</span>Discounts</h1>
+                </div>
+                <div >
+                    <button class="bg-[#FFFFFF] w-[240px] text-[#FD0000] rounded-[6px] h-[84px]">Learn More</button>
+                </div>
+            </div>
+            <div class="container flex  gap-[30px] bg-[#2C2C29] text-[#FFFFFF] p-[40px] ">
+                <div class="flex gap-[20px] border-r-2">
+                    <div class="w-[70px] h-[70px] rounded-[39px] flex justify-center items-center bg-[#FFFFFF]">
+                        <img src="./images/Asset/customer-service_4460756.png" class="w-[50px] h-[50px]" alt="">
+                    </div>
+                    <div>
+                        <h1 >Customer Support </h1>
+                        <p >Quick Customer grievanace handled by skilled support executives</p>
+                    </div>
+                </div>
+                <div class="flex gap-[20px] border-r-2">
+                    <div class="w-[70px] h-[70px] flex justify-center items-center rounded-[39px] bg-[#FFFFFF]">
+                        <img src="./images/Asset/security_7945256.png" class="w-[50px] h-[50px]" alt="">
+                    </div>
+                    <div>
+                        <h1>100% Quality Check </h1>
+                        <p>Quality tested products from branded manufactures</p>
+                    </div>
+                </div>
+                <div  class="flex gap-[20px]">
+                    <div class="w-[70px] h-[70px] flex justify-center items-center rounded-[39px] bg-[#FFFFFF]">
+                        <img src="./images/Asset/delivery-truck_5163890.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Fast delivery </h1>
+                        <p>Quick Customer grievanace handled by skilled support executives</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="bg-[#060202] text-[#CFD3D7] h-[300px] p-[80px] flex items-center justify-center gap-[60px]">
+            <div class="flex flex-col gap-[10px]" >
+                <img class="w-[142px]" src="./images/Asset/Untitled-2__1_-removebg-preview.png" alt="">
+                <p class="w-[231px]">Best and Affordable rental servies in Ghana with a wide variety of products and services
+                    We make your life simple
+                </p>
+                <p>
+                    Copyright Ahotor gh
+                </p>
+                
+            </div>
+            <div class="flex flex-col gap-[20px]">
+                <p class="text-[#0a5ae6]">Get in touch</p>
+                <p> <i class="fa-solid fa-location-dot" style="color: #0a5ae6;"></i> No 2 Accra lane Manmobi</p>
+                <p><i class="fa-regular fa-envelope" style="color: #0a5ae6;"></i> ahotor@ah.com</p>
+                <p><i class="fa-solid fa-phone" style="color: #0a5ae6;"></i>+233 234256487</p>
+            </div>
+            <div class="flex flex-col gap-[10px]">
+                <div class="flex gap-[20px]">
+                    <div class="bg-[#3A86FF] w-[40px] h-[40px] flex justify-center items-center rounded-[20px]">Dr</div>
+                    <div class="bg-[#3A86FF] w-[40px] h-[40px] flex justify-center items-center rounded-[20px]">Be</div>
+                    <div class="bg-[#3A86FF] w-[40px] h-[40px] flex justify-center items-center rounded-[20px]">Ig</div>
+                    <div class="bg-[#3A86FF] w-[40px] h-[40px] flex justify-center items-center rounded-[20px]">Tw</div>
+                </div>
+                <div>
+                    <p class="text-[16px] w-[199px]">Lorem ipsum, dolor sit amet consectetur 
+                         Cum architecto dolorum .</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-[10px]">
+                <p class="text-[#3A86FF]">Join newletter</p>
+                <form action="" class="flex  flex-col gap-[10px]">
+                    <label for="" class="block">Your Email</label>
+                    <input type="email" name="email" id="" placeholder="Enter your email">
+                    <button class="bg-[#3A86FF] w-[159px] h-[53px] rounded-[8px]">Subscribe</button>
+                </form>
+
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </main>
+    
+    
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+</body>
+</html>

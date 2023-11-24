@@ -1,0 +1,33 @@
+html{
+    font-family: 'Poppins', sans-serif;
+
+
+}
+.Search{
+    background-image: url('./images/Asset/search_5186446.png');
+    background-position: 27px 7px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    
+}
+.details::after{
+    content: "";
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    
+    width: 10%;
+    border-bottom: 1px solid black;
+  }
+
+  .card-container{
+
+        display: grid;
+        /* grid-gap: 5px; */
+        grid-row-gap: 80px;
+        column-gap: 20px;
+       
+        grid-template-columns: repeat(3,370px);
+        grid-template-rows: repeat(2, 258px);
+        
+  }
